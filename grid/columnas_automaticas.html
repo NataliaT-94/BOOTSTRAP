@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Columnas Automaticas</title>
+    <style>
+        .row > div {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .uno{
+            background: #f2f2f2;
+        }
+        .dos{
+            background: #dbdbdb;
+        }
+        .tres{
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+ <div class="container">
+        <div class="row">
+            <div class="col uno col-md-auto">
+                <h3>columna #1</h3>
+            </div>
+            <div class="col dos col-md-auto">
+                <h3>columna #2</h3>
+            </div>
+            <div class="col tres">
+                <h3>columna #3</h3>
+            </div>
+        </div>
+    </div> 
+    <div class="container">
+        <div class="row">
+            <div class="col uno">
+                <h4>columna #1</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, illum! Delectus inventore quisquam porro, fuga explicabo quam enim numquam eum! Ab dolor ratione quam quaerat quibusdam, est debitis sunt optio?</p>
+            </div>
+            <div class="col dos">
+                <h4>columna #2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsam reiciendis vero corporis quasi veritatis inventore nam unde possimus dolores, saepe magni fuga odio illo distinctio doloribus, eveniet mollitia? Quaerat!</p>
+            </div>
+
+            <div class="w-100"></div>
+            
+            <div class="col tres">
+                <h4>columna #3</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem iste maxime quos. Maxime est placeat laudantium, consectetur atque sit ab corporis nam doloremque dolore voluptatibus nisi, ipsum veniam molestiae cum.</p>
+            </div>
+            <div class="col cuatro">
+                <h4>columna #4</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem iste maxime quos. Maxime est placeat laudantium, consectetur atque sit ab corporis nam doloremque dolore voluptatibus nisi, ipsum veniam molestiae cum.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
