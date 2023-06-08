@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bordes</title>
+    <style>
+        .caja{
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-6">
+                <div class="caja bg-faded"></div>
+                <div class="caja bg-faded border-0"></div>
+                <div class="caja bg-faded border-top-0"></div>
+                <div class="caja bg-faded border-right-0"></div>
+                <div class="caja bg-faded border-bottom-0"></div>
+                <div class="caja bg-faded border-left-0"></div>
+            </div>
+            <div class="col-6">
+                <div class="caja bg-primary border-0 rounded"></div>
+                <div class="caja bg-primary border-0 rounded-top"></div>
+                <div class="caja bg-primary border-0 rounded-right"></div>
+                <div class="caja bg-primary border-0 rounded-bottom"></div>
+                <div class="caja bg-primary border-0 rounded-left"></div>
+                <div class="caja bg-primary border-0 rounded-circle"></div>
+                <div class="caja bg-primary border-0 rounded-rounded-0"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>ClearFix y Display</title>
+    <style>
+        .caja{
+            height: 100px;
+            width: 100px;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="bg-primary text-white p-2 mb-4">Elemento de tipo bloque</div>
+                <span class="bg-success text-white d-inline-block p-2 mb-4">Elemento de tipo linea (Convertido a inline-block)</span>
+                <span class="bg-success text-white d-inline-block p-2 mb-4">Elemento de tipo linea (Convertido a inline-block)</span>
+                <div class="bg-primary text-white  d-inline-block p-2 mb-4">Elemento de tipo bloque (Convertido a inline-block)</div>
+                <span class="bg-success text-white p-2 mb-4 d-block">Elemento de tipo linea (Convertido a block)</span>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div class="bg-primary clearfix">
+                    <div class="caja float-left d-inline-block"></div>
+                    <div class="caja float-right d-inline-block"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
