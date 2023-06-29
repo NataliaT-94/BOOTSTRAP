@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="barra-lateral col-12 col-sm-auto">
+                <div class="logo">
+                    <h2>Dashboard</h2>
+                </div>
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="#"><i class="icon-home"></i><span>Inicio</span></a>
+                    <a href="#"><i class="icon-doc-text"></i><span>Entradas</span></a>
+                    <a href="#"><i class="icon-users"></i><span>Usuarios</span></a>
+                    <a href="#"><i class="icon-cog-alt"></i><span>Configuracion</span></a>
+                    <a href="#"><i class="icon-logout"></i><span>Salir</span></a>
+                </nav>
+            </div>
+
+            <main class="main col">
+                <div class="row">
+                    <div class="columna col-lg-7">
+                        <div class="widget nueva_entrada">
+                            <h3 class="titulo">Nueva Entrada</h3>
+                            <form action="">
+                                <input type="text" placeholder="Titulo de la entrada">
+                                <textarea placeholder="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed praesentium rem optio! Blanditiis, voluptates autem. Minima quam hic fugiat quidem tempore voluptas qui? Reiciendis veritatis a, consequuntur vitae sequi reprehenderit."></textarea>
+                                <div class="d-flex justify-content-end">
+                                    <button><i class="icon icon-edit"></i> Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="columna col-lg-5">
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Estadisticas</h3>
+                            <div class="contenedor d-flex flex-wrap">
+                                <div class="caja">
+                                    <h3>15,236</h3>
+                                    <p>Visitas</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>1,831</h3>
+                                    <p>Registros</p>
+                                </div>
+                                <div class="caja">
+                                    <h3>$158,236</h3>
+                                    <p>Ingresos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
