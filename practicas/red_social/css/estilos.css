@@ -323,59 +323,80 @@ main footer .copyright{
         background: #0d659d;
         text-decoration: none;
     }
-}
 
-main .fondo-enlace{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    background: rgba(0, 0, 0, .5);
-    z-index: 99;
-    display: none;
+
+    main .fondo-enlace{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        background: rgba(0, 0, 0, .5);
+        z-index: 99;
+        display: none;
+    }
+    main .fondo-enlace.active{
+        display: block;
+    }
+    main .barra-lateral-izquierda{
+        width: 85%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: 100;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        overflow: scroll;
+    }
+    main .barra-lateral-izquierda .active{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    main .barra-lateral-izquierda nav{
+        border-bottom: none;
+    }
+    main .barra-lateral-izquierda nav a{
+        padding: 20px;
+        color: #fff;
+    }
+    main .barra-lateral-izquierda nav a:hover{
+        color: #3d3c3c;
+        background: #fff;
+    }
 }
-main .fondo-enlace.active{
-    display: block;
+@media screen and (max-width: 575px){
+    header .menu{
+        padding: 0 15px 15px 15px;
+    }
+    main .contenido-principal .publicar .foto a{
+        width: 40px;
+        height: 40px;
+        margin: 0;
+    }
+    main .publicacion .foto a{
+        width: 40px;
+        height: 40px;
+    }
 }
-main .barra-lateral-izquierda{
-    width: 85%;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 100;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    overflow: scroll;
-}
-main .barra-lateral-izquierda .active{
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-    -moz-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    -o-transform: translateX(0%);
-}
-main .barra-lateral-izquierda nav{
-     border-bottom: none;
-}
-main .barra-lateral-izquierda nav a{
-    padding: 20px;
-    color: #fff;
-}
-main .barra-lateral-izquierda nav a:hover{
-    color: #3d3c3c;
-    background: #fff;
+@media screen and (max-width: 320px){
+    main .contenido-principal .publicar .foto{
+        display: none;
+
+    }
 }
